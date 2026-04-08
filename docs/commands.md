@@ -5,4 +5,4 @@ This file records the exact commands used to set up, run, and inspect this repos
 ## 1. Go to the repo
 
 ```bash
-cd ~/rtl-productivity-cicd-toolkit
+cd ~/rtl-parametric-execute-unit

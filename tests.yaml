@@ -1,9 +1,70 @@
 smoke:
-  - name: hello
-    top: hello_tb
+  - name: exec_unit
+    description: "Default 32-bit execute unit regression with multiply enabled"
+    top: exec_unit_tb
     rtl:
-      - rtl/hello.sv
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
     tb:
-      - tb/hello_tb.sv
-    defines: []
-    plusargs: []
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_tb.sv
+
+  - name: exec_unit_nomul
+    description: "32-bit execute unit regression with multiply disabled"
+    top: exec_unit_nomul_tb
+    rtl:
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
+    tb:
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_nomul_tb.sv
+
+  - name: exec_unit_8b
+    description: "8-bit execute unit parameter sweep regression"
+    top: exec_unit_8b_tb
+    rtl:
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
+    tb:
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_8b_tb.sv
+
+  - name: exec_unit_16b
+    description: "16-bit execute unit parameter sweep regression"
+    top: exec_unit_16b_tb
+    rtl:
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
+    tb:
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_16b_tb.sv
+
+  - name: exec_unit_32b
+    description: "Explicit 32-bit execute unit width-specific regression"
+    top: exec_unit_32b_tb
+    rtl:
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
+    tb:
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_32b_tb.sv

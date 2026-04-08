@@ -314,36 +314,34 @@ Verification uses **directed self-checking simulation** plus **waveform-based in
 - **Expanded checked scenarios targeted:** 35+
 - **Pass:** 0
 - **Fail:** 0
-- **Status:** Verification plan defined; implementation and execution in progress
-
-> Update this section after regression is run.
+- **Status:** Verification plan defined; implementation and execution in progresss
 
 ---
 
 ## Testcase Coverage
 
-| Test ID | Name | Status |
-|---------|------|--------|
-| TC01 | Add Basic | TODO |
-| TC02 | Add Carry-Out | TODO |
-| TC03 | Add Signed Overflow | TODO |
-| TC04 | Sub Basic | TODO |
-| TC05 | Sub Carry/Borrow Convention | TODO |
-| TC06 | Logic AND/OR/XOR | TODO |
-| TC07 | Shift Left Logical | TODO |
-| TC08 | Shift Right Logical | TODO |
-| TC09 | Shift Right Arithmetic | TODO |
-| TC10 | Compare Equal | TODO |
-| TC11 | Compare Signed Less-Than | TODO |
-| TC12 | Compare Unsigned Less-Than | TODO |
-| TC13 | Branch Equal / Not Equal | TODO |
-| TC14 | Branch Signed / Unsigned Less-Than | TODO |
-| TC15 | Multiply Enabled | TODO |
-| TC16 | Multiply Disabled | TODO |
-| TC17 | Width Sweep - 8-bit | TODO |
-| TC18 | Width Sweep - 16-bit | TODO |
-| TC19 | Width Sweep - 32-bit | TODO |
-| TC20 | Illegal Opcode Handling | TODO |
+| Test ID | Name                               |Status|
+|---------|------------------------------------|------|
+| TC01    | Add Basic                          | TODO |
+| TC02    | Add Carry-Out                      | TODO |
+| TC03    | Add Signed Overflow                | TODO |
+| TC04    | Sub Basic                          | TODO |
+| TC05    | Sub Carry/Borrow Convention        | TODO |
+| TC06    | Logic AND/OR/XOR                   | TODO |
+| TC07    | Shift Left Logical                 | TODO |
+| TC08    | Shift Right Logical                | TODO |
+| TC09    | Shift Right Arithmetic             | TODO |
+| TC10    | Compare Equal                      | TODO |
+| TC11    | Compare Signed Less-Than           | TODO |
+| TC12    | Compare Unsigned Less-Than         | TODO |
+| TC13    | Branch Equal / Not Equal           | TODO |
+| TC14    | Branch Signed / Unsigned Less-Than | TODO |
+| TC15    | Multiply Enabled                   | TODO |
+| TC16    | Multiply Disabled                  | TODO |
+| TC17    | Width Sweep - 8-bit                | TODO |
+| TC18    | Width Sweep - 16-bit               | TODO |
+| TC19    | Width Sweep - 32-bit               | TODO |
+| TC20    | Illegal Opcode Handling            | TODO |
 
 ---
 

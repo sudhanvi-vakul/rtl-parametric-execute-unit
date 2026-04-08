@@ -1,0 +1,24 @@
+# Example test manifest.
+# Adapt field names to your existing backbone runner.
+tests:
+  - name: exec_unit_default
+    top: exec_unit_tb
+    rtl:
+      - rtl/exec_defs_pkg.sv
+      - rtl/alu_core.sv
+      - rtl/shifter_core.sv
+      - rtl/cmp_branch_core.sv
+      - rtl/mul_core.sv
+      - rtl/exec_unit.sv
+    tb:
+      - tb/exec_unit_testbench.sv
+      - tb/exec_unit_tb.sv
+
+  - name: exec_unit_8b
+    top: exec_unit_8b_tb
+  - name: exec_unit_16b
+    top: exec_unit_16b_tb
+  - name: exec_unit_32b
+    top: exec_unit_32b_tb
+  - name: exec_unit_nomul
+    top: exec_unit_nomul_tb
