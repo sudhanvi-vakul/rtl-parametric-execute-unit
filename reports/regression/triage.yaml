@@ -1,0 +1,21 @@
+triage:
+- test: exec_unit
+  classification: PASS
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit.log
+- test: exec_unit_nomul
+  classification: PASS
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_nomul.log
+- test: exec_unit_8b
+  classification: PASS
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_8b.log
+- test: exec_unit_16b
+  classification: PASS
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_16b.log
+- test: exec_unit_32b
+  classification: PASS
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_32b.log

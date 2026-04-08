@@ -1,0 +1,19 @@
+run_id: run_20260407_215132
+suite: smoke
+tool: xsim
+results:
+- name: exec_unit
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit.log
+- name: exec_unit_nomul
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_nomul.log
+- name: exec_unit_8b
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_8b.log
+- name: exec_unit_16b
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_16b.log
+- name: exec_unit_32b
+  rc: 0
+  log: reports/run_20260407_215132/logs/exec_unit_32b.log

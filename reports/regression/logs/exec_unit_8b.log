@@ -1,0 +1,4 @@
+[cmd] /apps/xilinx/Vivado/2019.2/bin/xvlog -sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/exec_defs_pkg.sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/alu_core.sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/shifter_core.sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/cmp_branch_core.sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/mul_core.sv /home/vsudhanvi/rtl-parametric-execute-unit/rtl/exec_unit.sv /home/vsudhanvi/rtl-parametric-execute-unit/tb/exec_unit_testbench.sv /home/vsudhanvi/rtl-parametric-execute-unit/tb/exec_unit_8b_tb.sv
+[cmd] /apps/xilinx/Vivado/2019.2/bin/xelab -debug typical exec_unit_8b_tb -snapshot work.sim
+[cmd] /apps/xilinx/Vivado/2019.2/bin/xsim work.sim -onfinish quit -onerror quit -tclbatch /home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_215203/run.tcl
+[ok] reports saved to reports/run_20260407_215203

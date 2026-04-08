@@ -148,7 +148,7 @@ grep -c "FAIL \[TC" "$latest/xsim.log"
 ## Run triage on latest report
 
 ```bash
-set latest=`ls -td reports/run_* | head -1`
+set latest=`ls -td reports/run_exec_unit_tb | head -1`
 python3 -m scripts.triage $latest
 cat $latest/triage.yaml
 ```
@@ -161,40 +161,22 @@ python3 -m scripts.report $latest
 cat $latest/summary.md
 ```
 
-## Full regression helper for whole smoke suite
-
-> Use this only if you want the wrapper-level regression launcher.
-
-```bash
-python3 -m scripts.regress --tool xsim --suite smoke --waves
-```
-
-## Latest regression folder after regress helper
-
-```bash
-set latest=`ls -td reports/run_* | head -1`
-echo $latest
-find $latest -maxdepth 2 -type f | sort
-```
-
-## Open exact waveform from a known run
-
-```bash
-xsim reports/run_YYYYMMDD_HHMMSS/work.sim.wdb -gui &
-```
-
 ## Check compile/elab/sim messages quickly
 
 ```bash
 set latest=`ls -td reports/run_* | head -1`
 grep -nE "ERROR:|FATAL|FAIL|PASS|XSIM|xvlog|xelab" "$latest/xsim.log"
 ```
-
-## Save latest path into notes manually
+## Regression test
 
 ```bash
-set latest=`ls -td reports/run_* | head -1`
-echo $latest >> docs/commands.md
+python3 -m scripts.regress --tool xsim --suite smoke --waves
+set latest=reports/run_20260407_215132
+python3 -m scripts.triage $latest
+python3 -m scripts.report $latest
+cat $latest/results.yaml
+cat $latest/triage.yaml
+cat $latest/summary.md
 ```
 
 ## Suggested verification execution order
