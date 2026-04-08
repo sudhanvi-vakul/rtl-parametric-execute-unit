@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr  7 20:58:22 2026
+# Process ID: 217201
+# Current directory: /home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_205815
+# Command line: xsim -mode tcl -source {xsim.dir/work.sim/xsim_script.tcl}
+# Log file: /home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_205815/xsim.log
+# Journal file: /home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_205815/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/work.sim/xsim_script.tcl
+# xsim {work.sim} -autoloadwcfg -tclbatch {/home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_205815/run.tcl} -onfinish quit -onerror quit
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source /home/vsudhanvi/rtl-parametric-execute-unit/reports/run_20260407_205815/run.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## run all
+============================================================
+Starting exec_unit_testbench DATA_W=16 HAS_MUL=1
+============================================================
+PASS [TC001] Single ADD smoke test
+PASS [TC002] One representative vector per legal opcode - ADD
+PASS [TC002] One representative vector per legal opcode - SUB
+PASS [TC002] One representative vector per legal opcode - AND
+PASS [TC002] One representative vector per legal opcode - OR
+PASS [TC002] One representative vector per legal opcode - XOR
+PASS [TC002] One representative vector per legal opcode - SLL
+PASS [TC002] One representative vector per legal opcode - SRL
+PASS [TC002] One representative vector per legal opcode - SRA
+PASS [TC002] One representative vector per legal opcode - CMPEQ
+PASS [TC002] One representative vector per legal opcode - CMPLT
+PASS [TC002] One representative vector per legal opcode - CMPLTU
+PASS [TC002] One representative vector per legal opcode - BR_EQ
+PASS [TC002] One representative vector per legal opcode - BR_NE
+PASS [TC002] One representative vector per legal opcode - BR_LT
+PASS [TC002] One representative vector per legal opcode - BR_LTU
+PASS [TC003] Back-to-back opcode switching - ADD
+PASS [TC003] Back-to-back opcode switching - XOR
+PASS [TC003] Back-to-back opcode switching - SRA
+PASS [TC003] Back-to-back opcode switching - BR_EQ
+PASS [TC004] Back-to-back operand switching under same opcode - ADD #1
+PASS [TC004] Back-to-back operand switching under same opcode - ADD #2
+PASS [TC004] Back-to-back operand switching under same opcode - ADD #3
+PASS [TC005] Basic illegal opcode smoke
+PASS [TC006] ADD small positive numbers #1
+PASS [TC006] ADD small positive numbers #2
+PASS [TC007] ADD zero plus zero
+PASS [TC008] ADD zero plus positive
+PASS [TC009] ADD positive plus negative without overflow
+PASS [TC010] ADD negative plus positive without overflow
+PASS [TC011] ADD negative plus negative without overflow
+PASS [TC012] ADD max unsigned plus 1
+PASS [TC013] ADD max signed positive plus 1
+PASS [TC014] ADD min signed negative plus negative
+PASS [TC015] ADD result exactly zero through cancellation
+PASS [TC016] SUB small positive numbers
+PASS [TC017] SUB equal operands
+PASS [TC018] SUB producing negative result
+PASS [TC019] SUB zero minus positive
+PASS [TC020] SUB positive minus zero
+PASS [TC021] SUB no-borrow style case
+PASS [TC022] SUB borrow style case
+PASS [TC023] SUB max positive minus (-1)
+PASS [TC024] SUB min negative minus 1
+PASS [TC025] SUB all-ones minus one
+PASS [TC026] AND mixed patterns
+PASS [TC027] OR mixed patterns
+PASS [TC028] XOR mixed patterns
+PASS [TC029] AND all zeros
+PASS [TC030] OR all zeros
+PASS [TC031] XOR identical operands
+PASS [TC032] OR all ones
+PASS [TC033] AND all ones with mixed operand
+PASS [TC034] SLL by 0
+PASS [TC035] SLL by 1
+PASS [TC036] SLL by small nonzero amount
+PASS [TC037] SLL by DATA_W-1
+PASS [TC038] SLL with high-bit spill/truncation
+PASS [TC039] SRL by 0
+PASS [TC040] SRL by 1
+PASS [TC041] SRL by small nonzero amount
+PASS [TC042] SRL by DATA_W-1
+PASS [TC043] SRL on all-ones operand
+PASS [TC044] SRA by 0
+PASS [TC045] SRA positive operand by 1
+PASS [TC046] SRA negative operand by 1
+PASS [TC047] SRA negative operand by multiple bits
+PASS [TC048] SRA by DATA_W-1
+PASS [TC049] EQ equal operands
+PASS [TC050] EQ non-equal operands
+PASS [TC051] EQ zero vs zero
+PASS [TC052] EQ all ones vs all ones
+PASS [TC053] signed LT negative vs positive
+PASS [TC054] signed LT positive vs negative
+PASS [TC055] signed LT equal operands
+PASS [TC056] signed LT small positive vs larger positive
+PASS [TC057] signed LT larger negative vs smaller negative
+PASS [TC058] unsigned LT small vs large
+PASS [TC059] unsigned LT large vs small
+PASS [TC060] unsigned LT equal operands
+PASS [TC061] same bit pattern, different signed vs unsigned meaning
+PASS [TC061] same bit pattern, different signed vs unsigned meaning (unsigned view)
+PASS [TC062] BR_EQ taken case
+PASS [TC063] BR_EQ not taken case
+PASS [TC064] BR_NE taken case
+PASS [TC065] BR_NE not taken case
+PASS [TC066] BR_LT signed true case
+PASS [TC067] BR_LT signed false case
+PASS [TC068] BR_LTU unsigned true case
+PASS [TC069] BR_LTU unsigned false case
+PASS [TC070] same operands, BR_LT != BR_LTU (signed view)
+PASS [TC070] same operands, BR_LT != BR_LTU (unsigned view)
+PASS [TC071] zero flag from ADD
+PASS [TC072] zero flag from SUB
+PASS [TC073] zero flag from XOR identical operands
+PASS [TC074] zero flag deasserted on nonzero result
+PASS [TC075] negative flag from arithmetic result
+PASS [TC076] negative flag from logic result
+PASS [TC077] negative flag from shift result
+PASS [TC078] negative flag cleared on positive result
+PASS [TC079] carry on ADD wraparound
+PASS [TC080] carry absent on non-wrapping ADD
+PASS [TC081] subtraction carry/borrow convention documented case 1
+PASS [TC082] subtraction carry/borrow convention documented case 2
+PASS [TC083] overflow on positive + positive -> negative
+PASS [TC084] overflow on negative + negative -> positive
+PASS [TC085] no overflow on mixed-sign addition
+PASS [TC086] overflow on subtraction positive - negative
+PASS [TC087] overflow on subtraction negative - positive
+PASS [TC088] no overflow on safe subtraction
+PASS [TC096] One illegal opcode value
+PASS [TC097] Several illegal opcode values #1
+PASS [TC097] Several illegal opcode values #2
+PASS [TC098] Illegal opcode after legal opcode
+PASS [TC098] Illegal opcode after legal opcode - illegal
+PASS [TC099] Legal opcode after illegal opcode
+PASS [TC099] Legal opcode after illegal opcode - recovery
+PASS [TC109] Result and zero consistency
+PASS [TC109] Result and zero consistency nonzero
+PASS [TC110] Result and negative consistency
+PASS [TC111] Branch matches compare intent - EQ
+PASS [TC111] Branch matches compare intent - LT
+PASS [TC112] Compare outputs stable across unrelated opcodes - AND
+PASS [TC112] Compare outputs stable across unrelated opcodes - SLL
+PASS [TC113] Mixed opcode directed sequence - ADD
+PASS [TC113] Mixed opcode directed sequence - XOR
+PASS [TC113] Mixed opcode directed sequence - SRA
+PASS [TC113] Mixed opcode directed sequence - BR_NE
+PASS [TC114] Repeated same opcode with different operands #1
+PASS [TC114] Repeated same opcode with different operands #2
+PASS [TC114] Repeated same opcode with different operands #3
+PASS [TC115] Alternating legal and illegal opcodes - legal
+PASS [TC115] Alternating legal and illegal opcodes - illegal
+PASS [TC115] Alternating legal and illegal opcodes - legal2
+PASS [TC116] Sequence including width-boundary values - all zeros
+PASS [TC116] Sequence including width-boundary values - all ones
+PASS [TC116] Sequence including width-boundary values - max positive
+PASS [TC116] Sequence including width-boundary values - min negative
+PASS [TC117] Sequence including compare/branch alternation - compare
+PASS [TC117] Sequence including compare/branch alternation - branch
+PASS [TC118] Waveform: carry-out case
+PASS [TC119] Waveform: signed overflow case
+PASS [TC120] Waveform: arithmetic right shift on negative number
+PASS [TC121] Waveform: signed vs unsigned compare distinction
+PASS [TC121] Waveform: signed vs unsigned compare distinction (unsigned view)
+PASS [TC122] Waveform: branch taken / not taken contrast - taken
+PASS [TC122] Waveform: branch taken / not taken contrast - not taken
+PASS [TC123] Waveform: illegal opcode response
+PASS [TC002] One representative vector per legal opcode - MUL
+PASS [TC089] MUL small positive numbers
+PASS [TC090] MUL by zero
+PASS [TC090] MUL by zero swapped
+PASS [TC091] MUL by one
+PASS [TC092] MUL negative and positive operand case
+PASS [TC093] MUL overflow/truncation case
+SKIP [TC100] Only executed when DATA_W == 8
+SKIP [TC101] Only executed when DATA_W == 8
+SKIP [TC102] Only executed when DATA_W == 8
+PASS [TC103] DATA_W=16 arithmetic sanity
+PASS [TC103] DATA_W=16 arithmetic sanity overflow
+PASS [TC104] DATA_W=16 shift sanity
+PASS [TC104] DATA_W=16 shift sanity boundary
+PASS [TC105] DATA_W=16 compare signed/unsigned distinction (signed view)
+PASS [TC105] DATA_W=16 compare signed/unsigned distinction (unsigned view)
+SKIP [TC106] Only executed when DATA_W == 32
+SKIP [TC107] Only executed when DATA_W == 32
+SKIP [TC108] Only executed when DATA_W == 32
+SKIP [TC094] Only executed when HAS_MUL == 0
+SKIP [TC095] Only executed when HAS_MUL == 0
+============================================================
+Completed exec_unit_testbench DATA_W=16 HAS_MUL=1
+  subcases = 161
+  pass     = 161
+  fail     = 0
+  skip     = 8
+============================================================
+$finish called at time : 161 ns : File "/home/vsudhanvi/rtl-parametric-execute-unit/tb/exec_unit_testbench.sv" Line 547
+exit 0
+INFO: [Common 17-206] Exiting xsim at Tue Apr  7 20:58:30 2026...

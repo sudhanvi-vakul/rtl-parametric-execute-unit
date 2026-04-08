@@ -1,0 +1,19 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /apps/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -debug typical exec_unit_16b_tb -snapshot work.sim 
+Multi-threading is on. Using 94 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.exec_defs_pkg
+Compiling module work.alu_core(DATA_W=16)
+Compiling module work.shifter_core(DATA_W=16)
+Compiling module work.cmp_branch_core(DATA_W=16)
+Compiling module work.mul_core(DATA_W=16)
+Compiling module work.exec_unit(DATA_W=16,HAS_MUL=1'b1...
+Compiling module work.exec_unit_testbench(DATA_W=16)
+Compiling module work.exec_unit_16b_tb
+Built simulation snapshot work.sim

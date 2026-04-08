@@ -1,0 +1,17 @@
+run_id: run_20260407_210007
+suite: smoke
+test: exec_unit_32b
+tool: xsim
+top: exec_unit_32b_tb
+waves: true
+sources:
+- rtl/exec_defs_pkg.sv
+- rtl/alu_core.sv
+- rtl/shifter_core.sv
+- rtl/cmp_branch_core.sv
+- rtl/mul_core.sv
+- rtl/exec_unit.sv
+- tb/exec_unit_testbench.sv
+- tb/exec_unit_32b_tb.sv
+defines: []
+plusargs: []

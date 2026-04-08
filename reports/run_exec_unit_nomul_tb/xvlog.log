@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/exec_defs_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/alu_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module alu_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/shifter_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module shifter_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/cmp_branch_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module cmp_branch_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/mul_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module mul_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/rtl/exec_unit.sv" into library work
+INFO: [VRFC 10-311] analyzing module exec_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/tb/exec_unit_testbench.sv" into library work
+INFO: [VRFC 10-311] analyzing module exec_unit_testbench
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/vsudhanvi/rtl-parametric-execute-unit/tb/exec_unit_nomul_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module exec_unit_nomul_tb
